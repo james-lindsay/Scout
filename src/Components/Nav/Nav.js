@@ -1,18 +1,20 @@
+import "./Nav.scss";
+
 const Nav = () => {
   return (
-    <nav>
-      <div className="nav__container">
-        <ul>
-          <li className="one">
-            <a href="">Clubs</a>
-          </li>
-          <li className="one">
-            <a href="">Footballers</a>
-          </li>
-          <hr />
-        </ul>
-      </div>
-    </nav>
+    <div className="nav">
+      <nav className="nav__container">
+        <a className="nav__home" href="Home">
+          Home
+        </a>
+        <a className="nav__clubs" href="Home">
+          Clubs
+        </a>
+        <a className="nav__footballers" href="Home">
+          Footballers
+        </a>
+      </nav>
+    </div>
   );
 };
 
