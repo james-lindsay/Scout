@@ -1,20 +1,32 @@
 import "./Nav.scss";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div className="nav">
-      <nav className="nav__container">
-        <a className="nav__home" href="Home">
-          Home
-        </a>
-        <a className="nav__clubs" href="Home">
-          Clubs
-        </a>
-        <a className="nav__footballers" href="Home">
-          Footballers
-        </a>
-      </nav>
-    </div>
+    <nav className="navbar">
+      <div className="container">
+        <div className="logo">SCOUT</div>
+        <div className="nav-elements">
+          <ul>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog">Blog</NavLink>
+            </li>
+            <li>
+              <NavLink to="/Footballers">Footballers</NavLink>
+            </li>
+            <li>
+              <NavLink to="/Clubs">Clubs</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
